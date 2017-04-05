@@ -1,0 +1,8 @@
+.idea/
+dubbox_demo_service.iml
+charge-provider/target/
+charge-provider/charge-provider.iml
+charge-interface/target/
+charge-interface/charge-interface.iml
+charge-consumer/target/
+charge-consumer/charge-consumer.iml
