@@ -2,6 +2,7 @@ package com.chargeProject.provider.test;
 
 import com.chargeProject.interfaces.entity.Result;
 import com.chargeProject.interfaces.interfaceX.IUserService;
+import com.chargeProject.interfaces.vo.User;
 import net.sf.json.JSONObject;
 import org.junit.Assert;
 import org.junit.Test;
@@ -23,6 +24,11 @@ public class TestUserService extends BaseTestService {
         Assert.assertEquals(result.getMessage(), "请求成功");
         //检验content中是否包含id字段
         Assert.assertEquals(content.containsKey("id"), true);
+    }
+    @Test
+    public void getUserById(){
+        User user=iUserService.getUserById(1);
+        System.out.println(user);
     }
 
 }
